@@ -13,15 +13,15 @@ docker run  -itd \
             --restart=always \
             --name=shadowsocksr \
             -v $PWD/conf:/usr/local/conf \
-            -p 55223:51301 \
-            # -p 55224:51301/udp \
-            # -p 55225:51301 \
-            # -p 55226:51301/udp \
-            # -p 55227:51301 \
-            # -p 55228:51301/udp \
+            -p 51321:51301 \
+            -p 51322:51301/udp \
+            -p 51323:51301 \
+            -p 51324:51301/udp \
+            -p 51325:51301 \
+            -p 51326:51301/udp \
             xrosy/shadowsocksr
 
 
-# docker run  -it --name=shadowsocksr -v $PWD/conf:/usr/local/conf xrosy/shadowsocksr sh
+# docker run  -it --name=shadowsocksr -v $PWD/conf:/usr/local/conf -p 55223:51301 xrosy/shadowsocksr sh
 # docker exec -it shadowsocksr sh
 # docker rm $(docker stop shadowsocksr)
