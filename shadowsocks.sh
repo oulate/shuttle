@@ -14,11 +14,11 @@ docker run  -itd \
             --name=shadowsocksr \
             -v $PWD/conf:/usr/local/conf \
             -p 55223:51301 \
-            -p 55224:51301/udp \
-            -p 55225:51301 \
-            -p 55226:51301/udp \
-            -p 55227:51301 \
-            -p 55228:51301/udp \
+            # -p 55224:51301/udp \
+            # -p 55225:51301 \
+            # -p 55226:51301/udp \
+            # -p 55227:51301 \
+            # -p 55228:51301/udp \
             xrosy/shadowsocksr
 
 

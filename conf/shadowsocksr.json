@@ -1,7 +1,7 @@
 {
     "server"               : "0.0.0.0",
     "server_ipv6"          : "::",
-    "server_port"          : 55223,
+    "server_port"          : 51301,
     "local_address"        : "127.0.0.1",
     "local_port"           : 1080,
 
