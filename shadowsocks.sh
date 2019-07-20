@@ -1,9 +1,7 @@
 # docker rm $(docker stop <CONTAINER ID>)
 
 
-docker container stop shadowsocksr
-
-docker container rm shadowsocksr
+docker rm $(docker stop shadowsocksr)
 
 # docker image rm xrosy/shadowsocksr
 
@@ -13,12 +11,8 @@ docker run  -itd \
             --restart=always \
             --name=shadowsocksr \
             -v $PWD/conf:/usr/local/conf \
-            -p 51321:51301 \
-            -p 51322:51301/udp \
-            -p 51323:51301 \
-            -p 51324:51301/udp \
-            -p 51325:51301 \
-            -p 51326:51301/udp \
+            -p 51321:51301/tcp \
+            -p 51361:51301/udp \
             xrosy/shadowsocksr
 
 
