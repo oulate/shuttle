@@ -1,14 +1,14 @@
 {
     "server"               : "0.0.0.0",
     "server_ipv6"          : "::",
-    "server_port"          : 51301,
+    "server_port"          : 51300,
     "local_address"        : "127.0.0.1",
     "local_port"           : 1080,
 
-    "password"             : "ali666888",
-    "method"               : "none",
+    "password"             : "vps666888",
+    "method"               : "chacha20-ietf",
     "protocol"             : "auth_chain_a",
-    "protocol_param"       : "#",
+    "protocol_param"       : "itunes.apple.com",
     "obfs"                 : "plain",
     "obfs_param"           : "",
     "speed_limit_per_con"  : 0,
@@ -16,10 +16,10 @@
 
     "additional_ports"     : {},
     "additional_ports_only": false,
-    "timeout"              : 120,
-    "udp_timeout"          : 60,
-    "dns_ipv6"             : true,
+    "timeout"              : 300,
+    "udp_timeout"          : 120,
+    "dns_ipv6"             : false,
     "connect_verbose_info" : 0,
     "redirect"             : "",
-    "fast_open"            : false
+    "fast_open"            : true
 }
