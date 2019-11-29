@@ -13,7 +13,7 @@ ENV TIMEOUT           300
 
 RUN mkdir -p /oulate/apps/ladder /oulate/conf /oulate/download && \
     apk add --no-cache python libsodium wget && \
-    wget --no-check-certificate -qO- http://static.chenzhenyuan.com//public/ladder.tar.gz | tar -xzf - -C /oulate/apps/ladder
+    wget --no-check-certificate -qO- https://github.com/oulate/ladder/releases/download/3.2.2/ladder.tar.gz | tar -xzf - -C /oulate/apps/ladder
 
 WORKDIR /oulate/apps/ladder
 
