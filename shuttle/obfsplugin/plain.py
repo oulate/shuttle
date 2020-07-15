@@ -22,7 +22,7 @@ import sys
 import hashlib
 import logging
 
-from ladder.common import ord
+from shuttle.common import ord
 
 def create_obfs(method):
     return plain(method)

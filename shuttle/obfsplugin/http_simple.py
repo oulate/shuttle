@@ -27,9 +27,9 @@ import base64
 import datetime
 import random
 
-from ladder import common
-from ladder.obfsplugin import plain
-from ladder.common import to_bytes, to_str, ord, chr
+from shuttle import common
+from shuttle.obfsplugin import plain
+from shuttle.common import to_bytes, to_str, ord, chr
 
 def create_http_simple_obfs(method):
     return http_simple(method)

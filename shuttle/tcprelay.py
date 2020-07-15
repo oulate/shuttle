@@ -29,8 +29,8 @@ import random
 import platform
 import threading
 
-from ladder import encrypt, obfs, eventloop, shell, common, lru_cache, version
-from ladder.common import pre_parse_header, parse_header
+from shuttle import encrypt, obfs, eventloop, shell, common, lru_cache, version
+from shuttle.common import pre_parse_header, parse_header
 
 # we clear at most TIMEOUTS_CLEAN_SIZE timeouts each time
 TIMEOUTS_CLEAN_SIZE = 512

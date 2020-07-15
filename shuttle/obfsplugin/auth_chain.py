@@ -30,11 +30,11 @@ import struct
 import hmac
 import bisect
 
-import ladder
-from ladder import common, lru_cache, encrypt
-from ladder.obfsplugin import plain
-from ladder.common import to_bytes, to_str, ord, chr
-from ladder.crypto import openssl
+import shuttle
+from shuttle import common, lru_cache, encrypt
+from shuttle.obfsplugin import plain
+from shuttle.common import to_bytes, to_str, ord, chr
+from shuttle.crypto import openssl
 
 rand_bytes = openssl.rand_bytes
 

@@ -22,8 +22,8 @@ import sys
 import hashlib
 import logging
 
-from ladder import common, lru_cache
-from ladder.crypto import rc4_md5, openssl, sodium, table
+from shuttle import common, lru_cache
+from shuttle.crypto import rc4_md5, openssl, sodium, table
 
 
 method_supported = {}

@@ -7,10 +7,10 @@ import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../'))
 
 
-from ladder.crypto import rc4_md5
-from ladder.crypto import openssl
-from ladder.crypto import sodium
-from ladder.crypto import table
+from shuttle.crypto import rc4_md5
+from shuttle.crypto import openssl
+from shuttle.crypto import sodium
+from shuttle.crypto import table
 
 def run(func):
 	try:

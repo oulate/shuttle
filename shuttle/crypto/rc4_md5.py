@@ -19,7 +19,7 @@ from __future__ import absolute_import, division, print_function, \
 
 import hashlib
 
-from ladder.crypto import openssl
+from shuttle.crypto import openssl
 
 __all__ = ['ciphers']
 
@@ -40,7 +40,7 @@ ciphers = {
 
 
 def test():
-    from ladder.crypto import util
+    from shuttle.crypto import util
 
     cipher = create_cipher('rc4-md5', b'k' * 32, b'i' * 16, 1)
     decipher = create_cipher('rc4-md5', b'k' * 32, b'i' * 16, 0)

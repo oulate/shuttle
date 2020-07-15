@@ -30,10 +30,10 @@ import hmac
 import hashlib
 import string
 
-from ladder import common
-from ladder.obfsplugin import plain
-from ladder.common import to_bytes, to_str, ord
-from ladder import lru_cache
+from shuttle import common
+from shuttle.obfsplugin import plain
+from shuttle.common import to_bytes, to_str, ord
+from shuttle import lru_cache
 
 def create_tls_ticket_auth_obfs(method):
     return tls_ticket_auth(method)

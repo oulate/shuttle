@@ -23,8 +23,8 @@ import json
 import sys
 import getopt
 import logging
-from ladder.common import to_bytes, to_str, IPNetwork, PortRange
-from ladder import encrypt
+from shuttle.common import to_bytes, to_str, IPNetwork, PortRange
+from shuttle import encrypt
 
 VERBOSE_LEVEL = 5
 
@@ -56,10 +56,10 @@ def __version():
     version_str = ''
     try:
         import pkg_resources
-        version_str = pkg_resources.get_distribution('ladder').version
+        version_str = pkg_resources.get_distribution('shuttle').version
     except Exception:
         try:
-            from ladder import version
+            from shuttle import version
             version_str = version.version()
         except Exception:
             pass
@@ -67,11 +67,11 @@ def __version():
 
 
 def print_shadowsocks():
-    print('ladder %s' % __version())
+    print('shuttle %s' % __version())
 
 
 def log_shadowsocks_version():
-    logging.info('ladder %s' % __version())
+    logging.info('shuttle %s' % __version())
 
 
 def find_config():
@@ -246,8 +246,8 @@ def get_config(is_local):
     config['udp_cache'] = int(config.get('udp_cache', 64))
     config['fast_open'] = config.get('fast_open', True)
     config['workers'] = config.get('workers', 1)
-    config['pid-file'] = config.get('pid-file', '/var/run/ladder.pid')
-    config['log-file'] = config.get('log-file', '/var/log/ladder.log')
+    config['pid-file'] = config.get('pid-file', '/var/run/shuttle.pid')
+    config['log-file'] = config.get('log-file', '/var/log/shuttle.log')
     config['verbose'] = config.get('verbose', False)
     config['connect_verbose_info'] = config.get('connect_verbose_info', 0)
     config['local_address'] = to_str(config.get('local_address', '127.0.0.1'))

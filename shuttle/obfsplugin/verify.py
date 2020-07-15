@@ -31,10 +31,10 @@ import zlib
 import hmac
 import hashlib
 
-import ladder
-from ladder import common
-from ladder.obfsplugin import plain
-from ladder.common import to_bytes, to_str, ord, chr
+import shuttle
+from shuttle import common
+from shuttle.obfsplugin import plain
+from shuttle.common import to_bytes, to_str, ord, chr
 
 def create_verify_deflate(method):
     return verify_deflate(method)

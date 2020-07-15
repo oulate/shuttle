@@ -32,10 +32,10 @@ import zlib
 import hmac
 import hashlib
 
-import ladder
-from ladder import common, lru_cache, encrypt
-from ladder.obfsplugin import plain
-from ladder.common import to_bytes, to_str, ord, chr
+import shuttle
+from shuttle import common, lru_cache, encrypt
+from shuttle.obfsplugin import plain
+from shuttle.common import to_bytes, to_str, ord, chr
 
 def create_auth_sha1_v4(method):
     return auth_sha1_v4(method)

@@ -72,8 +72,8 @@ import binascii
 import traceback
 import threading
 
-from ladder import encrypt, obfs, eventloop, lru_cache, common, shell
-from ladder.common import pre_parse_header, parse_header, pack_addr
+from shuttle import encrypt, obfs, eventloop, lru_cache, common, shell
+from shuttle.common import pre_parse_header, parse_header, pack_addr
 
 # for each handler, we have 2 stream directions:
 #    upstream:    from client to server direction

@@ -148,7 +148,7 @@ ciphers = {
 
 
 def run_method(method):
-    from ladder.crypto import util
+    from shuttle.crypto import util
 
     cipher = CtypesCrypto(method, b'k' * 32, b'i' * 16, 1)
     decipher = CtypesCrypto(method, b'k' * 32, b'i' * 16, 0)

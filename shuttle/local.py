@@ -28,7 +28,7 @@ if __name__ == '__main__':
     file_path = os.path.dirname(os.path.realpath(inspect.getfile(inspect.currentframe())))
     sys.path.insert(0, os.path.join(file_path, '../'))
 
-from ladder import shell, daemon, eventloop, tcprelay, udprelay, asyncdns
+from shuttle import shell, daemon, eventloop, tcprelay, udprelay, asyncdns
 
 
 def main():

@@ -23,7 +23,7 @@ import sys
 import logging
 import signal
 import time
-from ladder import common, shell
+from shuttle import common, shell
 
 # this module is ported from ShadowVPN daemon.c
 

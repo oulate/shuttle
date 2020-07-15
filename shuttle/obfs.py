@@ -22,8 +22,8 @@ import sys
 import hashlib
 import logging
 
-from ladder import common
-from ladder.obfsplugin import plain, http_simple, obfs_tls, verify, auth, auth_chain
+from shuttle import common
+from shuttle.obfsplugin import plain, http_simple, obfs_tls, verify, auth, auth_chain
 
 
 method_supported = {}

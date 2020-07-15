@@ -25,7 +25,7 @@ import logging
 import json
 import collections
 
-from ladder import common, eventloop, tcprelay, udprelay, asyncdns, shell
+from shuttle import common, eventloop, tcprelay, udprelay, asyncdns, shell
 
 
 BUF_SIZE = 1506
@@ -198,7 +198,7 @@ def test():
     import time
     import threading
     import struct
-    from ladder import encrypt
+    from shuttle import encrypt
 
     logging.basicConfig(level=5,
                         format='%(asctime)s %(levelname)-8s %(message)s',

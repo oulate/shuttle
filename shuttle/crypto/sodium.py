@@ -22,7 +22,7 @@ from ctypes import c_char_p, c_int, c_ulong, c_ulonglong, byref, \
 
 import logging
 
-from ladder.crypto import util
+from shuttle.crypto import util
 
 __all__ = ['ciphers']
 
